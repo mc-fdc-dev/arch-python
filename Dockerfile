@@ -2,9 +2,6 @@ FROM archlinux:latest
 
 ENV LANG C.UTF-8
 
-WORKDIR /src/builder
-ENV PYTHON_VERSION 3.11.1
-
 RUN pacman -Syyu --noconfirm
 RUN pacman --noconfirm -S wget tar sqlite zlib openssl gcc make
 
