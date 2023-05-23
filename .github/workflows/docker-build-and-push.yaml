@@ -3,6 +3,8 @@ name: Push to github container register
 on:
   release:
     types: [created]
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   push-docker:
