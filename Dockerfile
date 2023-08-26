@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 RUN pacman -Syyu --noconfirm
 RUN pacman --noconfirm -S wget tar sqlite zlib openssl gcc make
 
-ENV PYTHON_VERSION 3.11.1
+ENV PYTHON_VERSION 3.11.5
 
 RUN mkdir /tmp/python && \
   cd /tmp/python && \
